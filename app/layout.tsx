@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Soluz",
-  description: "Soluz - Design & Software. Desenvolvendo sua marca junto com você!",
+  title: "Savatto",
+  description: "Savatto - Design & Software. Desenvolvendo sua marca junto com você!",
 };
 
 export default function RootLayout({
