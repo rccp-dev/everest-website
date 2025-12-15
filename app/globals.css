@@ -84,13 +84,13 @@ a:focus {
 
   .hero-content {
     @apply flex-col relative justify-center text-center mx-10 z-10 px-4;
-    margin-top: 50px;
-    /* Header (180px) dividido por 2 menos botão interativo (40px)*/
   }
 
   @media (min-width: 768px) {
     .hero-content {
       max-width: 600px;
+      margin-top: 50px;
+      /* Header (180px) dividido por 2 menos botão interativo (40px)*/
       @apply mx-0;
     }
   }

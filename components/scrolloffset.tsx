@@ -24,7 +24,8 @@ export default function ScrollOffset() {
 
       e.preventDefault();
 
-      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const elementPosition =
+        element.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = elementPosition - totalOffset;
 
       window.scrollTo({
@@ -32,12 +33,15 @@ export default function ScrollOffset() {
         behavior: "smooth",
       });
 
-      router.replace(`${pathname}#${id}`, { scroll: false });
+      // Atualiza o hash depois de uma animação de frame
+      requestAnimationFrame(() => {
+        history.replaceState(null, "", `#${id}`);
+      });
     };
 
     document.addEventListener("click", handleAnchorClick);
     return () => document.removeEventListener("click", handleAnchorClick);
-  }, [router, pathname]);
+  }, []);
 
   return null;
 }
