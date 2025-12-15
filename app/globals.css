@@ -84,6 +84,7 @@ a:focus {
 
   .hero-content {
     @apply flex-col relative justify-center text-center mx-10 z-10 px-4;
+    margin-top: -40px;
   }
 
   @media (min-width: 768px) {
@@ -144,4 +145,9 @@ body {
   color: var(--foreground);
   font-family: var(--font-poppins);
   font-optical-sizing: auto;
+}
+
+[id] {
+  scroll-margin-top: 200px;
+  /* altura do header + margem extra */
 }

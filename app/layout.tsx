@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import ScrollOffset from "@/components/scrolloffset";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -83,7 +82,6 @@ export default function RootLayout({
       </head>
       <body className={`overflow-x-hidden antialiased`}>
         <Header />
-        <ScrollOffset />
         {children}
         <Footer />
       </body>
