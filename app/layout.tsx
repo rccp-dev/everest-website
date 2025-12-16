@@ -5,7 +5,13 @@ import Footer from "@/components/footer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Savatto",
+  title: {
+    default: "Savatto — Design & Software",
+    template: "%s | Savatto",
+  },
+  icons: {
+    icon: "/icon.png",
+  },
   description:
     "Savatto - Design & Software. Desenvolvendo sua marca junto com você!",
   openGraph: {
