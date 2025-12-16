@@ -6,7 +6,7 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title: {
-    default: "Savatto — Design & Software",
+    default: "Savatto: Design & Software",
     template: "%s | Savatto",
   },
   icons: {
